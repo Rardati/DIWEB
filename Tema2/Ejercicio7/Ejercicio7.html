@@ -3,7 +3,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio de Selectores Combinadores</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+        div p{
+            color:blue;
+        }    
+
+        .container > h2{
+            color:red;
+        }
+
+        h2 + p{
+            color:green;
+        }
+
+        .intro{
+            color:yellow;
+        }
+
+        h2, .intro{
+            margin: 10px;
+        
+        }
+        p.container.intro{
+            background-color: gray;
+        }
+
+    </style>
 </head>
 <body>
     <div class="container">
