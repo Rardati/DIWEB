@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  
+p{
+    color:blue;
+}
+
+
+.importante{
+    background-color: yellow;
+}
+
+#titulo{
+    color:violet;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+[type="text"]{
+    border: 2px solid red;
+  }
