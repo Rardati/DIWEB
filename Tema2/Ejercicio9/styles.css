@@ -42,3 +42,18 @@ h1 {
     height: 200px; /* Completa con 200px para una altura fija */
     max-width: 500px; /* Completa con 500px para limitar el ancho máximo */
 }
+
+
+
+
+/*
+Preguntas para Reflexionar:
+ ¿Cómo afecta cada unidad (vh, vw, %) al diseño cuando se cambia el tamaño de la ventana?
+    - Tienen diferentes comportamientos cuando se cambia el tamaño de la ventana, % es más flexible ya que se adapta al tamaño del contenedor, 
+    mientras que vh/vw son fijos respecto al viewport.
+    
+
+ ¿Qué diferencias observas entre el comportamiento del .vh-box y el .vw-box?
+ ¿Cómo limita el tamaño del bloque .percent-box la propiedad max-width?
+
+*/
