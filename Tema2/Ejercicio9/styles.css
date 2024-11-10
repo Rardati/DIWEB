@@ -49,11 +49,23 @@ h1 {
 /*
 Preguntas para Reflexionar:
  ¿Cómo afecta cada unidad (vh, vw, %) al diseño cuando se cambia el tamaño de la ventana?
-    - Tienen diferentes comportamientos cuando se cambia el tamaño de la ventana, % es más flexible ya que se adapta al tamaño del contenedor, 
-    mientras que vh/vw son fijos respecto al viewport.
+    - Tienen diferentes comportamientos cuando se cambia el tamaño de la ventana, % es más flexible ya que 
+    se adapta al tamaño del contenedor, mientras que vh/vw son fijos respecto al viewport.
     
+    - vh: Se adapta a la altura de la ventana. Si cambias la altura de la ventana, el tamaño del elemento cambia.
+    - vw: Depende del ancho de la ventana. Si cambias el ancho, el tamaño del elemento cambia.
+    - %: Se adapta al tamaño de su contenedor. Cambia según el tamaño del contenedor, no directamente con el tamaño de la ventana.
 
  ¿Qué diferencias observas entre el comportamiento del .vh-box y el .vw-box?
+
+ - vh-box: Cambia de tamaño con la altura de la ventana.
+ - vw-box: Cambia de tamaño con el ancho de la ventana.
+
  ¿Cómo limita el tamaño del bloque .percent-box la propiedad max-width?
+
+  - La propiedad max-width establece un ancho máximo para el .percent-box.
+  Max-width establece un tamaño máximo para el bloque. Esto significa que 
+  el bloque puede adaptarse al contenedor, pero no crecerá más allá de ese límite.
+
 
 */
