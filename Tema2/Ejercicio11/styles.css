@@ -1,0 +1,39 @@
+/* CSS Básico */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.texto {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    z-index: 1;
+}
+
+.imagen{
+   
+    background-image: url('https://images.unsplash.com/photo-1515950875043-158db0c2cd75?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-position: center; 
+    background-attachment: fixed;
+}
