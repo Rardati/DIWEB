@@ -22,7 +22,7 @@ h2 {
 
 /* 3. Estilo para el párrafo (p) */
 p {
-    font-size: italic; /* Aplica un tamaño de fuente cómodo para leer */
+    font-size: 12px; /* Aplica un tamaño de fuente cómodo para leer */
     color:  #333333; /* Cambia el color del texto */
     text-align: justify; /* Justifica el texto para mejorar su presentación */
     text-indent: 30px; /* Indenta la primera línea del párrafo */
