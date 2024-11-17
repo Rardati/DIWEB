@@ -1,0 +1,25 @@
+/* CSS */
+
+.seccion-uno {
+    border: 3px dotted blue; /* Estilo punteado, grosor 3px, color azul */
+    margin: 20px;           /* Margen alrededor de la sección */
+    padding: 10px;          /* Relleno interno */
+
+  }
+  
+ 
+  .seccion-dos {
+    border-style: solid;
+    border-width: 5px 10px 15px 20px; /* Grosor diferente para cada lado */
+    border-color: green;   
+  }
+  
+ 
+  .seccion-tres button {
+    border: 4px double red; /* Estilo doble, grosor 4px, color rojo */
+    border-radius: 15px;    /* Esquinas redondeadas con radio de 15px */
+    padding: 10px 20px;     /* Relleno del botón para un mejor diseño */
+    cursor: pointer;        /* Cambia el cursor al pasar por encima */
+    font-size: 16px;       
+  }
+  
