@@ -34,8 +34,7 @@ p {
 
 ¿Cuál es el color del párrafo con el ID parrafo? ¿Qué regla prevalece?
 - El color aplicado es Red. 
-- La regla de ID tiene mayor especificidad que la regla para todos los párrafos. 
-Por lo tanto, prevalece la regla de ID.
+- La regla de ID tiene mayor especificidad que la regla para todos los párrafos. Por lo tanto, prevalece la regla de ID.
 
 
 ¿Qué color tiene el párrafo con la clase texto dentro del div contenedor? Explica por qué se aplica ese color en particular.
