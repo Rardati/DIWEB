@@ -17,4 +17,6 @@
 .seccion-tres button {
     margin: auto;
     margin-top: 50px;
+    background-color: aqua;
+    width: 30%;
 }
