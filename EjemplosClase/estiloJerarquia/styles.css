@@ -24,18 +24,23 @@ p {
     color: gray;
 }
 
+
+
 /*
 ¿Qué color se aplica finalmente al encabezado <h1>? Explica cuál fue la regla ganadora y por qué.
-- El color aplicado es Orange. La regla en línea (style="color: orange;") tiene la mayor prioridad en la cascada CSS.
+- El color aplicado es Orange. 
+- La regla en línea (style="color: orange;") tiene la mayor prioridad en la cascada CSS.
 
 
 ¿Cuál es el color del párrafo con el ID parrafo? ¿Qué regla prevalece?
-- El color aplicado es Red. La regla de ID tiene mayor especificidad que la regla para todos los párrafos. 
+- El color aplicado es Red. 
+- La regla de ID tiene mayor especificidad que la regla para todos los párrafos. 
 Por lo tanto, prevalece la regla de ID.
 
 
 ¿Qué color tiene el párrafo con la clase texto dentro del div contenedor? Explica por qué se aplica ese color en particular.
-- El color aplicado es Purple. La regla con !important tiene mayor prioridad que cualquier otra regla en la cascada, 
+- El color aplicado es Purple. 
+- La regla con !important tiene mayor prioridad que cualquier otra regla en la cascada, 
 incluso si otras reglas tienen mayor especificidad o están definidas después.
 
 
