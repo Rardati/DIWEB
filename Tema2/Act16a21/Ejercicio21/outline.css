@@ -14,5 +14,9 @@
 .desplazamiento {
     outline: 2px solid rgb(8, 107, 221);
     outline-offset: 10px;
-    margin: 10px;
+    margin: 30px;
+    border: 1px solid red;
+
+
+   
 }
