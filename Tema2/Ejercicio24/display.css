@@ -1,12 +1,19 @@
 /* CSS BASICO */
 
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-
+    line-height: 1.6;
 }
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
 
 .container {
     display: flex;
@@ -18,25 +25,55 @@ body {
 .block {
     display: block;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: #0db6e0;
+    color: white;
     text-align: center;
-    
-}   
+    line-height: 50px;
+    margin: 5px 0;
+}
 
 .inline {
-
     display: inline;
     background-color: #124ed1;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 .inline-block {
-
     display: inline-block;
-    width: 150px;
+    width: 300px;
     height: 50px;
     background-color: #8c0d9c;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
 }
 
+.hidden-element {
+    display: none;
+    width: 200px;
+    height: 50px;
+    background-color: #16054b;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+}
 
+.toggle-button {
+    padding: 10px 20px;
+    background-color: #024d42;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #55f26c;
+}
 
