@@ -1,0 +1,29 @@
+/* CSS */
+
+.PrimerCuadro {
+    position: absolute;
+    background-color: rgb(3, 92, 92);
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    z-index: -1;
+}
+
+.SegundoCuadro {
+    position: absolute;
+    background-color: rgb(35, 3, 71);
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    z-index: 1;
+}
+
+.TercerCuadro {
+    position: absolute;
+    background-color: rgb(69, 98, 194);
+    border:3px solid rgb(3, 19, 71);
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    z-index: -3;
+}
