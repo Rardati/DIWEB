@@ -30,7 +30,7 @@ body {
 
     position: relative;
     background-color: #045055;
-    padding: 10px;
+    padding-bottom: 170px;
     margin-bottom: 70px;
     left: 20px;
    
@@ -62,8 +62,7 @@ body {
     position: sticky;
     background-color: #f51283;
     padding: 10px;
-    top: 20px;
-    margin: 20px;;
-   
+    margin: 20px;
+    
 
 }
