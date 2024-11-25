@@ -1,0 +1,65 @@
+/* CSS BASICO */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-container {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+
+}
+
+.static-element {
+
+    position:static;
+    background-color: #1bddcd;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    
+
+}
+
+.relative-element {
+
+    position: relative;
+    background-color: #045055;
+    padding: 10px;
+    margin-bottom: 10px;
+    left: 20px;
+
+}
+
+.absolute-element {
+
+    position: absolute;
+    background-color: #ccffcc;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+
+}
+
+.fixed-element {
+
+    position: fixed;
+    background-color: #9730eb;
+    padding: 10px;   
+    top: 20px;
+    right: 20px;
+
+}
+
+.sticky-element {
+    
+    position: sticky;
+    background-color: #f51283;
+    padding: 10px;
+    top: 20px;
+    
+
+}
