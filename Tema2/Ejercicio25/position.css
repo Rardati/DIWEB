@@ -41,6 +41,7 @@ body {
 
     position: absolute;
     background-color: #ccffcc;
+    border: 2px solid green;
     padding: 10px;
     top: 20px;
     left: 20px;
@@ -50,7 +51,8 @@ body {
 .fixed-element {
 
     position: fixed;
-    background-color: #9730eb;
+    background-color: rgb(194, 121, 236);
+    border: 2px solid #9730eb;
     padding: 10px;   
     top: 20px;
     right: 20px;
@@ -61,6 +63,7 @@ body {
     
     position: sticky;
     background-color: #f51283;
+    border: 5px solid black;
     padding: 10px;
     margin: 20px;
     
