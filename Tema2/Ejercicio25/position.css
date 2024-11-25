@@ -52,7 +52,7 @@ body {
 
     position: fixed;
     background-color: rgb(194, 121, 236);
-    border: 2px solid #9730eb;
+    border: 3px solid #9730eb;
     padding: 10px;   
     top: 20px;
     right: 20px;
@@ -63,7 +63,7 @@ body {
     
     position: sticky;
     background-color: #f51283;
-    border: 5px solid black;
+    border: 3px solid black;
     padding: 10px;
     margin: 20px;
     
