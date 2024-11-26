@@ -1,0 +1,72 @@
+/* CSS */
+
+.container {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+
+h1{
+
+    
+    background-color: rgb(230, 175, 220);
+    border: 5px solid rgb(63, 2, 60);
+   
+    
+}
+
+.centrado {
+
+    margin: auto;
+    width: 50%;
+    background-color: #b090eb;
+    margin-bottom: 20px;
+
+}
+
+.imagen {
+
+    display: block;
+    width: 50%;
+    margin-bottom:auto;
+
+
+}
+
+
+
+
+.elemento1 {
+
+    margin: auto;
+    float: left;
+    background-color: #569fcf;
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+.elemento2 {
+
+    
+    margin: auto;
+    float: right;
+    background-color:rgb(35, 141, 190);
+    padding: 10px;
+    border: 5px solid rgb(1, 34, 49);
+}
+
+
+
+.vertical {
+
+    clear: both;
+    position: relative;
+    top: 50%;
+    background-color: #b0b0b0;
+    
+}
