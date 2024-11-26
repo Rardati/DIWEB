@@ -2,29 +2,51 @@
 header {
     background-color: #f0f0f0;
     padding: 20px;
+
+    text-align: center;
 }
 
 .columna1 {
-    width: 33.33%;
+
     float: left;
-    background-color: #e6f3ff;
+    width: 22%;    
+    background-color: #4890d3;
     padding: 20px;
+    
 }
 
 .columna2 {
-    width: 33.33%;
+
     float: left;
-    background-color: #fff0f0;
+    width: 22%;    
+    background-color: #bcf0b2;
     padding: 20px;
+
 }
 
 .columna3 {
-    width: 33.33%;
+
     float: left;
-    background-color: #f0e6ff;
+    width: 22%;    
+    background-color: #caaff1;
     padding: 20px;
+
 }
 
 footer{
+
+    clear: both;
+    background-color: #f0c0e8;
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+.columna4 {
+
+    float: left;
+    width: 22%; 
+    padding: 20px;   
     
 }
