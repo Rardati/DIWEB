@@ -48,9 +48,20 @@ footer{
 
 .columna4 {
 
-    float: left;
-    width: 22.55%; 
+    float: right;
+    width: 10%; 
     padding: 20px;   
+    background-color: bisque;
     border:2px solid black;
+    text-align: center;
 
 }
+
+/*
+¿Qué sucede si no se usa clear?
+
+
+¿Qué otros elementos además de clear pueden solucionar problemas similares?
+
+
+*/
