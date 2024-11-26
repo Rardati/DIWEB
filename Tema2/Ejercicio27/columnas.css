@@ -1,0 +1,30 @@
+/* CSS */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.columna1 {
+    width: 33.33%;
+    float: left;
+    background-color: #e6f3ff;
+    padding: 20px;
+}
+
+.columna2 {
+    width: 33.33%;
+    float: left;
+    background-color: #fff0f0;
+    padding: 20px;
+}
+
+.columna3 {
+    width: 33.33%;
+    float: left;
+    background-color: #f0e6ff;
+    padding: 20px;
+}
+
+footer{
+    
+}
