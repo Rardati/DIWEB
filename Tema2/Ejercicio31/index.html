@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo-clases: Hijos y Hermanos</title>
     <style>
         /* Escribe tus estilos aquí */
+        ul>li:first-child {
+            background-color: lightblue;
+        }
+
+        
+        ul>li:last-child {
+            font-weight: bold;
+        }
+
+       
+        .tareas>li:nth-child(3) {
+            background-color: yellow;
+            color: white;
+        }
+
+        
+        .tareas>li+li {
+            color: red;
+        }
+        ul > li:first-child {
+    background-color: lightblue;
+}
+
+/* Style the last child of each list with bold text */
+ul > li:last-child {
+    font-weight: bold;
+}
+
+/* Apply a unique style to the third element of the tasks list */
+.tareas > li:nth-child(3) {
+    background-color: yellow;
+    color: white;
+}
+
+/* Change the text color of siblings immediately after the element containing "Pagar facturas" */
+.tareas > li + li {
+    color: red;
+}
+
     </style>
 </head>
+
 <body>
     <h1>Lista de tareas</h1>
     <ul class="tareas">
@@ -26,4 +67,5 @@
         <li>Luisa</li>
     </ul>
 </body>
+
 </html>
