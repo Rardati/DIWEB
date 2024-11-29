@@ -8,50 +8,30 @@
     <style>
         /* Escribe tus estilos aquí */
 
-        ul>li:first-child {
+        li:first-child {
             background-color: lightblue;
         }
 
 
-        ul>li:last-child {
+        li:last-of-type {
             font-weight: bold;
         }
 
 
-        .tareas>li:nth-child(3) {
+        li:nth-child(3) {
             background-color: rgb(18, 168, 118);
             color: white;
         }
 
-
-        .tareas>li+li {
-            color: rgb(86, 10, 116);
+        .tareas li:nth-child(3)+li{
+            color: rgb(126, 27, 219);
         }
 
-        ul>li:first-child {
-            background-color: lightblue;
-        }
-
-      
-        ul>li:last-child {
-            font-weight: bold;
-        }
-
-       
-        .tareas>li:nth-child(3) {
-            background-color: rgb(241, 130, 39);
-            color: white;
-        }
-
-       
-        .tareas>li+li {
-            color: rgb(153, 7, 109);
-        }
-
-        .tareas li:nth-child(3) + li{
-            color: rgb(18, 142, 180);
-        }
+       ul.contactos li:nth-child(2){
+        color:rgb(180, 35, 216)
+       }
         
+
     </style>
 </head>
 
