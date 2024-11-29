@@ -7,45 +7,51 @@
     <title>Pseudo-clases: Hijos y Hermanos</title>
     <style>
         /* Escribe tus estilos aquí */
+
         ul>li:first-child {
             background-color: lightblue;
         }
 
-        
+
+        ul>li:last-child {
+            font-weight: bold;
+        }
+
+
+        .tareas>li:nth-child(3) {
+            background-color: rgb(18, 168, 118);
+            color: white;
+        }
+
+
+        .tareas>li+li {
+            color: rgb(86, 10, 116);
+        }
+
+        ul>li:first-child {
+            background-color: lightblue;
+        }
+
+      
         ul>li:last-child {
             font-weight: bold;
         }
 
        
         .tareas>li:nth-child(3) {
-            background-color: rgb(18, 168, 118);
+            background-color: rgb(241, 130, 39);
             color: white;
         }
 
-        
+       
         .tareas>li+li {
-            color: rgb(86, 10, 116);
+            color: rgb(153, 7, 109);
         }
-        ul > li:first-child {
-    background-color: lightblue;
-}
 
-/* Style the last child of each list with bold text */
-ul > li:last-child {
-    font-weight: bold;
-}
-
-/* Apply a unique style to the third element of the tasks list */
-.tareas > li:nth-child(3) {
-    background-color: yellow;
-    color: white;
-}
-
-/* Change the text color of siblings immediately after the element containing "Pagar facturas" */
-.tareas > li + li {
-    color: red;
-}
-
+        .tareas li:nth-child(3) + li{
+            color: rgb(18, 142, 180);
+        }
+        
     </style>
 </head>
 
