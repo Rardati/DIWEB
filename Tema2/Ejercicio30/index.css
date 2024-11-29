@@ -2,7 +2,6 @@ a:link{
     color:rgb(189, 110, 235);
 }
 
-
 a:visited {
     color: #54a9e2;
 }
@@ -10,3 +9,5 @@ a:visited {
 a:hover {
     color: #0056b3;
 }
+
+
