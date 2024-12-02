@@ -39,6 +39,7 @@ body {
     background-attachment: scroll;
     opacity: 0.5;
     
+    
 }
 
 .seccion2{
@@ -59,4 +60,12 @@ body {
     background-position: center; 
     background-attachment: local;
     opacity: 0.5;
+    position: absolute;
+}
+
+p{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: black;
 }
