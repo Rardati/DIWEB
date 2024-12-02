@@ -1,0 +1,62 @@
+/* CSS Básico */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    
+    overflow-y: auto;
+    background-image: url('https://img.freepik.com/vector-premium/fondo-transparente-ilustracion-mariposas-azules-blancas_567746-3233.jpg');
+    
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.texto {
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+    
+}
+
+.seccion1{
+    height: 600px;
+    background-image: url('https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2014/07/09/140709112631_morpho2_624x351_spl.jpg.webp');
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-position: center; 
+    background-attachment: scroll;
+    opacity: 0.5;
+    
+}
+
+.seccion2{
+    height: 600px;
+    background-image: url('https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2014/07/09/140709112631_morpho2_624x351_spl.jpg.webp');
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-position: center; 
+    background-attachment: fixed;
+    opacity: 0.5;
+}
+
+.seccion3{
+    height: 600px;
+    background-image: url('https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2014/07/09/140709112631_morpho2_624x351_spl.jpg.webp');
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-position: center; 
+    background-attachment: local;
+    opacity: 0.5;
+}
