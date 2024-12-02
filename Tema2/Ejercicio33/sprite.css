@@ -1,20 +1,19 @@
-.home{
+.home {
+    left: 0px;
     width: 46px;
-    height: 44px;
     background: url() 0 0;
 }
 
-.buscar{
-    width: 46px;
-    height: 44px;
+.buscar {
+    left: 63px;
+    width: 43px;
     background: url() 0 0;
 }
 
 
 
-.configurar{
-    width: 46px;
-    height: 44px;
+.configurar {
+    left: 129px;
+    width: 43px;
     background: url() 0 0;
 }
-
