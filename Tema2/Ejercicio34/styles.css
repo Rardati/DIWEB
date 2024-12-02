@@ -35,6 +35,8 @@ body {
   }
 
   
+
+  
 /*
 ¿Qué estilo toma el texto con inherit?¿Por qué?
 - Toma el estilo del padre, porque inherit indica que el elemento debe heredar la propiedad de su elemento padre
