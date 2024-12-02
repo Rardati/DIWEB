@@ -33,4 +33,25 @@ body {
     font-family: revert;
     color: revert;
   }
+
   
+/*
+¿Qué estilo toma el texto con inherit?¿Por qué?
+- Toma el estilo del padre, porque inherit indica que el elemento debe heredar la propiedad de su elemento padre
+
+¿Cómo se comporta el texto con initial?¿Qué significa este valor?
+- Toma el valor inicial o por defecto.
+- Si una propiedad tiene un valor inicial, si en un momento dado se ha cambiado, 
+al usar initial vuelve a su valor inicial.
+
+
+¿Qué sucede con unset?¿Es diferente para propiedades heredables y no heredables?
+- El comportamiento de unset es diferente dependiendo si la propiedad es heredable o no.
+- Si una propiedad hereda significa inherit
+- Si una propiedad no hereda significa initial.
+
+¿Cómo actúa revert en comparación con los otros valores?
+- Se comporta parecido a unset, pero en este caso si hereda significa 
+inherit y si no hereda es revert es decir restablece el valor del estilo.
+
+*/  
