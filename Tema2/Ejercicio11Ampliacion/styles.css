@@ -69,3 +69,10 @@ p{
     text-align: center;
     color: black;
 }
+
+.prueba{
+    color:rgba(red, green, blue, alpha);
+    background-color: rgba(0,0,0,1);
+    width: 100px;
+    height: 100px;
+}
