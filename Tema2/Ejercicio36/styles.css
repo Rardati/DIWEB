@@ -1,0 +1,28 @@
+/* CSS */
+
+p{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 60px);
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    #seccion1,
+    #seccion2,
+    #seccion3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
