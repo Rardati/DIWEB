@@ -1,28 +1,30 @@
 /* CSS Estilo */
 
+/*Usa herencia para aplicar un color de texto general a todo el documento.*/
 body {
 
     color: black;
 }
 
-
+/*Los párrafos dentro de la sección deben usar una fuente diferente de la predeterminada.*/
 section p {
 
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-
+/*El elemento con la clase highlight debe tener un fondo amarillo y un texto en negrita.*/
 .highlight {
 
     background-color: yellow;
     font-weight: bold;
 }
 
-
+/*El párrafo con el id="override" debe sobrescribir el color de texto general con uno personalizado.*/
 #override {
     color: rgb(115, 12, 156) !important;
 }
 
+/*Asegúrate de que el título principal (h1) herede el color general pero tenga un tamaño mayor definido directamente.*/
 
 #main-header h1 {
 
@@ -43,7 +45,7 @@ header,footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
-    
+
 }
 
 
