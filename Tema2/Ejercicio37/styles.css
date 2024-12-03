@@ -1,0 +1,37 @@
+@import url();
+
+
+p {
+    font-size: 16px;
+    color: gray;
+}
+
+/* Estilo para la imagen */
+img {
+    border: solid 2px black;
+}
+
+/* Ajustes generales */
+body {
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para las secciones */
+section {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Estilo para los enlaces */
+a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
