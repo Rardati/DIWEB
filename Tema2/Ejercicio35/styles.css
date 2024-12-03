@@ -1,35 +1,37 @@
 /* CSS Estilo */
 
 body {
-    color: #333;
+    color: black;
 }
 
-/* Different font for section paragraphs */
+
 section p {
     font-family: Arial, sans-serif;
 }
 
-/* Highlighted paragraph */
+
 .highlight {
+
     background-color: yellow;
     font-weight: bold;
 }
 
-/* Override text color for specific paragraph */
+
 #override {
-    color: red !important;
+    color: rgb(115, 12, 156) !important;
 }
 
-/* Main title */
+
 #main-header h1 {
-    font-size: 2.5em !important;
+
+    font-size: 25px !important;
+    
 }
 
-/* Other styles */
-header,
-footer {
+
+header,footer {
     text-align: center;
-    padding: 1em;
+    padding: 10px;
 }
 
 .container {
@@ -39,18 +41,22 @@ footer {
 }
 
 
+
+
+
+
 /*
 Preguntas para Reflexionar:
 1. ¿Qué sucede si cambias el orden de las reglas CSS?
-
+- La ultima orden que se le de al CSS tendrá prioridad sobre las reglas anteriores con igual especificidad. 
 
 2. ¿Cómo afecta la especificidad a los estilos aplicados en el párrafo #override?
-
+- Tendrán prioridad sobre otros selectores con menor especificidad, incluso si están definidos más adelante en el archivo CSS
 
 3. ¿Qué sucede si eliminas el !important de alguna regla?
-
+- Perderá prioridad frente a otras reglas con igual o mayor especificidad que no tienen !important.
 
 4. ¿Qué reglas son heredadas automáticamente y cuáles necesitas especificar explícitamente?
-
+- 
 
 */
