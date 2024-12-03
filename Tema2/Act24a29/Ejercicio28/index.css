@@ -63,7 +63,7 @@ h1{
 
 
 .vertical {
-
+    clear:both;
     position: relative;
     top: 50%;
     background-color: #b0b0b0;
