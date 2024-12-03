@@ -1,0 +1,56 @@
+/* CSS Estilo */
+
+body {
+    color: #333;
+}
+
+/* Different font for section paragraphs */
+section p {
+    font-family: Arial, sans-serif;
+}
+
+/* Highlighted paragraph */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Override text color for specific paragraph */
+#override {
+    color: red !important;
+}
+
+/* Main title */
+#main-header h1 {
+    font-size: 2.5em !important;
+}
+
+/* Other styles */
+header,
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/*
+Preguntas para Reflexionar:
+1. ¿Qué sucede si cambias el orden de las reglas CSS?
+
+
+2. ¿Cómo afecta la especificidad a los estilos aplicados en el párrafo #override?
+
+
+3. ¿Qué sucede si eliminas el !important de alguna regla?
+
+
+4. ¿Qué reglas son heredadas automáticamente y cuáles necesitas especificar explícitamente?
+
+
+*/
