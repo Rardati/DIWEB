@@ -1,11 +1,13 @@
 /* CSS Estilo */
 
 body {
+
     color: black;
 }
 
 
 section p {
+
     font-family: Arial, sans-serif;
 }
 
@@ -30,14 +32,18 @@ section p {
 
 
 header,footer {
+
     text-align: center;
     padding: 10px;
+
 }
 
 .container {
+
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 
