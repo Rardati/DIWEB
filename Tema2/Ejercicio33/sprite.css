@@ -1,19 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+
+.icon {
+    width: 100px;
+    height: 100px;
+    background: url('https://img.freepik.com/vector-gratis/botones-juego-interfaz-dibujos-animados-textura-piedra-metal-oro_107791-5058.jpg?t=st=1733128096~exp=1733131696~hmac=868b7b58c5954de3942045b77ef837ab155002f24741a1015971f6a64fb3e272&w=996') no-repeat;
+    background-size: 300px 100px; /* Ensure the sprite fits */
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
 .home {
-    left: 0px;
-    width: 46px;
-    background: url() 0 0;
+    background-position: 0 0; 
+    background: url('https://img.freepik.com/vector-gratis/botones-juego-interfaz-dibujos-animados-textura-piedra-metal-oro_107791-5058.jpg?t=st=1733128096~exp=1733131696~hmac=868b7b58c5954de3942045b77ef837ab155002f24741a1015971f6a64fb3e272&w=996');
 }
 
 .buscar {
-    left: 63px;
-    width: 43px;
-    background: url() 0 0;
+    background-position: -100px 0; 
+    background: url('https://img.freepik.com/vector-gratis/botones-juego-interfaz-dibujos-animados-textura-piedra-metal-oro_107791-5058.jpg?t=st=1733128096~exp=1733131696~hmac=868b7b58c5954de3942045b77ef837ab155002f24741a1015971f6a64fb3e272&w=996');
 }
 
-
-
 .configurar {
-    left: 129px;
-    width: 43px;
-    background: url() 0 0;
+    background-position: -200px 0;
+    background: url('https://img.freepik.com/vector-gratis/botones-juego-interfaz-dibujos-animados-textura-piedra-metal-oro_107791-5058.jpg?t=st=1733128096~exp=1733131696~hmac=868b7b58c5954de3942045b77ef837ab155002f24741a1015971f6a64fb3e272&w=996');
 }
