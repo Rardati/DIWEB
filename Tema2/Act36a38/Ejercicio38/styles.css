@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.site-header .logo {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.navigation ul li {
+    text-align: left; 
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    background-color: #555;
+    display: block;
+    border-radius: 4px;
+}
+
+.navigation ul li a:hover {
+    background-color: #777;
+}
+
+
+.main-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+@media screen and (min-width: 768px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-end;
+    }
+
+    .navigation ul li {
+        text-align: center;
+    }
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.logo img {
+    max-width: 80px; 
+    height: auto; 
+    border-radius: 50%; 
+    border: 2px solid #ddd; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+@media screen and (orientation: portrait) {
+    .site-header {
+        background-color: #444; /* Darker color for portrait mode */
+    }
+}
+
+/* Media Query for Orientation: Landscape */
+@media screen and (orientation: landscape) {
+    .site-header {
+        background-color: #222; /* Even darker color for landscape mode */
+    }
+}
