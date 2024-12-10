@@ -4,12 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(70, 68, 66);
+    background-color:  rgb(180, 185, 183);
 }
 
 .titulo {
     margin-right: 20px; /* Añade un poco de espacio entre el título y el menú */
-    color:white;
+    color:black;
 }
 
 .menu {
@@ -41,11 +41,11 @@
 footer {
     
     width: 100%;
-    background-color: rgb(70, 68, 66); /* Color de fondo opcional */
+    background-color: rgb(180, 185, 183); /* Color de fondo opcional */
     text-align: center;
 }
 
 footer p {
     margin: 10px 0;
-    color:white;
+    color:black;
 }
