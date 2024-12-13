@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #f26522;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+
+    left: 0;
+
+    padding: 0;
+}
+
+header .logo img {
+    width: 10%;
+
+    height: auto;
+
+}
+
+header nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+header nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown a {
+    color: #000;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown a:hover {
+    background-color: #f26522;
+    color: #fff;
+}
+
+.section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #f26522;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.carousel img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #f26522;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+#dark-mode-toggle {
+    width: 120px;
+    /* Ancho fijo del botón */
+    height: 40px;
+    /* Alto fijo del botón */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    background-color: #f26522;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Texto en negrita */
+    transition: background-color 0.3s ease;
+    /* Transición para efectos de hover */
+}
+
+/* Efecto hover */
+#dark-mode-toggle:hover {
+    background-color: #d35400;
+    /* Fondo ligeramente más oscuro al pasar el mouse */
+}
