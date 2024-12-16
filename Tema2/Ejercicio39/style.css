@@ -7,16 +7,26 @@
     background-color:  rgb(180, 185, 183);
 }
 
-.titulo {
-    margin-right: 20px; /* Añade un poco de espacio entre el título y el menú */
-    color:black;
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.menu {
-    
-    width: 100px;
-    margin: 10px;
-    margin-left: auto;
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.titulo {
+    margin-right: 20px;
+    color: black;
 }
 
 .galeria {
