@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.8rem;
+}
+
+.nav-primary {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+}
+
+.content-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.section-description {
+    margin-bottom: 10px;
+}
+
+.section-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin: 0;
+}
