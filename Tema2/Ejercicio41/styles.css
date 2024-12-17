@@ -1,55 +1,78 @@
 /* Contenedor principal */
 .gallery {
     display: grid;
-    column-gap: 50px;
-    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 300px;
-    gap: 20px;*/
+    gap: 20px; /* Espaciado inicial */
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* Imágenes */
-  .gallery img {
+}
+
+/* Imágenes */
+.gallery img {
     width: 100%;
-    height: 300px;
     border-radius: 10px;
     border: 5px solid white;
     object-fit: cover;
-  }
-  
-  /* Media queries para diferentes tamaños de pantalla */
-  
-  @media (min-width: 768px) {
+    aspect-ratio: 4 / 3; /* Mantiene proporciones consistentes */
+}
+
+/* Pantallas grandes (≥ 1024px) */
+@media (min-width: 1024px) {
     .gallery {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "img1 img2 img3"
+            "img4 img4 img4"
+            "img5 img6 img7";
+        gap: 20px;
     }
-  }
-  
-  @media (min-width: 1024px) {
+
+    .gallery img:nth-child(1) {
+        grid-area: img1;
+    }
+
+    .gallery img:nth-child(2) {
+        grid-area: img2;
+    }
+
+    .gallery img:nth-child(3) {
+        grid-area: img3;
+    }
+
+    .gallery img:nth-child(4) {
+        grid-area: img4; /* Imagen destacada */
+    }
+
+    .gallery img:nth-child(5) {
+        grid-area: img5;
+    }
+
+    .gallery img:nth-child(6) {
+        grid-area: img6;
+    }
+
+    .gallery img:nth-child(7) {
+        grid-area: img7;
+    }
+}
+
+/* Pantallas medianas (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
     .gallery {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      
-      figure:nth-child(4) {
-        grid-column: span 3 / span 3;
-      }
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
-  }
-  
-  @media (max-width: 767px) {
+}
+
+/* Pantallas pequeñas (≤ 767px) */
+@media (max-width: 767px) {
     .gallery {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 10px;
     }
-  
+
     .gallery img {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
-  
-    .gallery figcaption {
-      display: none;
-    }
-  }
+}
