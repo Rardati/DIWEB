@@ -3,29 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Landing Page - Crea tus Joyas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header> </header>
-    <main>
-        <section class="galeria">
-          <h2>Galería Principal</h2>
-
-          <img src="istockphoto-812998192-612x612.jpg" alt="Crear joyas">
-          <img src="pulseras.jpg" alt="hazlas a tu gusto">
-          <img src="complementos.jpg" alt="Tus complementos">
-
-
-        </section>
-        <section class="contenido">
-          <h2>Crea tus propias joyas</h2>
-          <p>Descubre el mundo de la creatividad y personaliza tus joyas según tus gustos</p>
-        </section>
-    </main>
-    <footer>
-      <button class="boton">Explora más</button>
-    </footer>
- 
+  <header class="header">
+    <div class="headerTexto">
+      <h1>Crea tus Joyas Únicas</h1>
+      <p>Descubre tu estilo con joyas personalizadas</p> 
+    </div>
+    <img src="Gemas.jpg" alt="Todo a tu gusto" class="grid-item">
+  </header>
+  <main class="container">
+    <section class="galeria">
+      <h2>Galería Principal</h2>
+      <div class="image-grid">
+        <img src="imagen-pequeña.jpg" 
+             srcset="imagen-grande.jpg 1024w, imagen-mediana.jpg 768w, imagen-pequeña.jpg 480w" 
+             sizes="(max-width: 768px) 100vw, 50vw" 
+             alt="Crea tus propias joyas" class="grid-item">
+        <img src="pulseras.jpg" alt="Hazlas a tu gusto" class="grid-item">
+        <img src="complementos.jpg" alt="Tus complementos ideales" class="grid-item">
+      </div>
+    </section>
+    <section class="contenido">
+      <h2>Personaliza tu Estilo</h2>
+      <div class="contenido-detalle">
+        <img src="detalle-joya.jpg" alt="Detalle de una joya" class="contenido-imagen">
+        <p>
+          Aprende a crear diseños únicos y dale vida a tus ideas con nuestras guías personalizadas. 
+          ¡Haz que cada pieza cuente tu historia!
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="#explora" class="boton">
+      <img src="icono-explorar.png" alt="" class="icono"> Explora más
+    </a>
+  </footer>
 </body>
 </html>
