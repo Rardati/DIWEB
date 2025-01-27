@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page - Crea tus Joyas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header-texto">
       <h1>Crea tus Joyas Únicas</h1>
-      <p>Descubre tu estilo con joyas personalizadas</p> 
+      <p>Descubre tu estilo con joyas personalizadas</p>
     </div>
     <img src="Gemas.jpg" alt="Todo a tu gusto" class="grid-item">
   </header>
+
   <main class="container">
+    <!-- Galería Principal -->
     <section class="galeria">
       <h2>Galería Principal</h2>
       <div class="image-grid">
-        <img src="imagen-pequeña.jpg" 
-             srcset="imagen-grande.jpg 1024w, imagen-mediana.jpg 768w, imagen-pequeña.jpg 480w" 
-             sizes="(max-width: 768px) 100vw, 50vw" 
-             alt="Crea tus propias joyas" class="grid-item">
-        <img src="pulseras.jpg" alt="Hazlas a tu gusto" class="grid-item">
-        <img src="complementos.jpg" alt="Tus complementos ideales" class="grid-item">
+        <!-- <img src="CreaJoyas.jpg" 
+             srcset="imagen-grande.jpg 1024w, imagen-mediana.jpg 768w, CreaJoyas.jpg 480w"
+             sizes="(max-width: 768px) 100vw, 33vw" alt="Crea tus propias joyas" class="gallery-item">
+
+             <img src="pulseras.jpg" 
+             srcset="pulseras-grande.jpg 1024w, pulseras-mediana.jpg 768w, pulseras.jpg 480w" 
+             sizes="(max-width: 768px) 100vw, 33vw" 
+             alt="Hazlas a tu gusto" class="gallery-item">
+        
+        <img src="complementos.jpg" 
+             srcset="complementos-grande.jpg 1024w, complementos-mediana.jpg 768w, complementos.jpg 480w" 
+             sizes="(max-width: 768px) 100vw, 33vw" 
+             alt="Tus complementos ideales" class="gallery-item"> -->
+
+
+             <img src="CreaJoyas.jpg" alt="Crea tus propias joyas" class="gallery-item">
+             <img src="pulseras.jpg" alt="Hazlas a tu gusto" class="gallery-item">
+             <img src="complementos.jpg" alt="Tus complementos ideales" class="gallery-item">
+
       </div>
     </section>
+
+    <!-- Sección de Contenido -->
     <section class="contenido">
       <h2>Personaliza tu Estilo</h2>
       <div class="contenido-detalle">
-        <img src="detalle-joya.jpg" alt="Detalle de una joya" class="contenido-imagen">
+        <img src="detalle-joyas.jpg" alt="Detalle de una joya" class="contenido-imagen">
         <p>
-          Aprende a crear diseños únicos y dale vida a tus ideas con nuestras guías personalizadas. 
+          Aprende a crear diseños únicos y dale vida a tus ideas con nuestras guías personalizadas.
           ¡Haz que cada pieza cuente tu historia!
         </p>
       </div>
     </section>
   </main>
-  <footer>
+
+  <footer class="footer">
     <a href="#explora" class="boton">
-      <img src="icono-explorar.png" alt="" class="icono"> Explora más
+      <img src="explorar.png" alt="Explora" class="icono"> Explora más
     </a>
   </footer>
+
+
 </body>
+
 </html>
