@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <style>
+        /* Estilo para el contenedor del video con borde negro */
+        .video-container {
+            border: 2px solid black;
+            max-width: 720px; /* Resolución SD */
+            margin: auto;
+        }
+        /* Estilo para los botones personalizados */
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reproductor de Video en la Web</h1>
+
+    <div class="video-container">
+        <!-- Video con tres formatos diferentes y la carátula -->
+        <video id="video" width="720" height="480" poster="caratula.jpg" controls>
+            <source src="videos/video2.webm" type="video/webm">
+            <source src="videos/video2.mp4" type="video/mp4">
+            <source src="videos/video.ogv" type="video/ogg">
+            <p>Tu navegador no es compatible con el formato de video.</p>
+        </video>
+    </div>
+
+    <div class="controls">
+        <!-- Botones personalizados -->
+        <button class="button" onclick="playVideo()">Reproducir</button>
+        <button class="button" onclick="pauseVideo()">Pausar</button>
+        <button class="button" onclick="stopVideo()">Detener</button>
+    </div>
+
+    <div class="links">
+        <!-- Enlaces para descargar y abrir el video en otra página -->
+        <a href="videos/video2.webm" download>Descargar Video</a><br>
+        <a href="videos/video2.webm" target="_blank">Ver Video en Nueva Página</a>
+    </div>
+
+    <script>
+        // Obtener el elemento de video
+        var video = document.getElementById('video');
+
+        // Funciones para los controles personalizados
+        function playVideo() {
+            video.play();
+        }
+
+        function pauseVideo() {
+            video.pause();
+        }
+
+        function stopVideo() {
+            video.pause();
+            video.currentTime = 0;
+        }
+    </script>
+</body>
+</html>
