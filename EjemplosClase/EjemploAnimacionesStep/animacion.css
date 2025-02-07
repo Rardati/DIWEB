@@ -1,0 +1,39 @@
+#boton {
+    width: 100px;
+    height: 50px;
+    background-color: #0daae7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Animación de colores */
+@keyframes colores {
+    0%   { background-color: #0daae7; }
+    33%  { background-color: rgb(23, 65, 182); }
+    66%  { background-color: rgb(160, 83, 233); }
+    100% { background-color: rgb(233, 105, 226); }
+}
+
+/* Animación de movimiento vertical */
+@keyframes mover {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(100px); }
+}
+
+/* Aplicar animaciones con steps */
+#boton {
+    animation: 
+        colores 3s infinite steps(4),
+        mover 2s infinite steps(2);
+        
+}
+
+/* Efecto hover modificado */
+#boton:hover {
+    background-color: #b10678;
+    width: 250px;
+    height: 150px;
+    transform: rotate(0.5turn);
+    animation-play-state: paused;
+}
