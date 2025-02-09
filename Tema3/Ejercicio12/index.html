@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Audio</title>
+    <style>
+        /* Estilos personalizados para el control de audio */
+        audio {
+            width: 300px;
+            filter: drop-shadow(2px 2px 5px gray);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Reproductor de música de fondo</h2>
+    
+    <!-- Control de audio con accesibilidad ARIA -->
+    <audio controls preload="metadata" loop aria-label="Reproductor de música de fondo">
+        <source src="C:\Users\Raquel\Documents\GitHub\DIWEB\Tema3\Ejercicio12\darklogo.mp3" type="audio/mpeg">
+        <source src="C:\Users\Raquel\Documents\GitHub\DIWEB\Tema3\Ejercicio12\darklogo.ogg" type="audio/ogg">
+        <source src="C:\Users\Raquel\Documents\GitHub\DIWEB\Tema3\Ejercicio12\darklogo.wav" type="audio/wav">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    
+
+</body>
+</html>
