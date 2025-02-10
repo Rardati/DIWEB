@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,27 +8,21 @@
 
     <style>
         .enlace-efecto {
-
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            transition: all 0.2s linear;
+            color: #3498db;
+            transition: background-color 0.3s linear, transform 0.3s linear;
             transform-origin: center;
         }
 
         .enlace-efecto:hover {
-           
-            background-color: #680763;
-
+            color: #680763;
             transform: scale(2) rotateY(180deg);
         }
     </style>
 </head>
 
 <body>
-    <a href="#enlace" class="enlace-efecto">Hola, pasa el cursor</a>
+    <a href="#" class="enlace-efecto">Hola, pasa el cursor</a>
 </body>
 
 </html>
