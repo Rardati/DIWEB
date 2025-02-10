@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mover letra</title>
     <style>
         #texto {
             position: relative;  
@@ -11,7 +14,7 @@
 
 <body>
     <div >
-        <h1 id="texto">Hola</h1>
+        <h1 id="texto">p</h1>
     </div>
 
     <!-- Importar GSAP -->
@@ -22,7 +25,7 @@
     gsap.to("#texto", {x: 1000, fontSize: "72px",color: "green",duration: 2, ease: "none", delay: 1, repeat: 1, yoyo: true});
         
     </script>
-    
+
 </body>
 
 </html>
