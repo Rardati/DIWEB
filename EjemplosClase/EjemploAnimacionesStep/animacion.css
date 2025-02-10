@@ -1,5 +1,5 @@
 #boton {
-    width: 100px;
+    width: 200px;
     height: 50px;
     background-color: #0daae7;
     border: none;
@@ -25,15 +25,7 @@
 #boton {
     animation: 
         colores 3s infinite steps(4),
-        mover 2s infinite steps(2);
+        mover 2s infinite steps(5);
         
 }
 
-/* Efecto hover modificado */
-#boton:hover {
-    background-color: #b10678;
-    width: 250px;
-    height: 150px;
-    transform: rotate(0.5turn);
-    animation-play-state: paused;
-}
