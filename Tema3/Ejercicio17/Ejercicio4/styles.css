@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+@keyframes colorChange {
+    0% { background-color: #6c0f6f; }
+    25% { background-color: #dc36ab; }
+    50% { background-color: #111e98; }
+    75% { background-color: #147ad9; }
+    100% { background-color: #0d9f51; }
+}
+
+canvas {
+    animation: colorChange 4s infinite;
+}
