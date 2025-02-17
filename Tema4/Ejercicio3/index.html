@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas </title>
-   
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        details p {
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
+        }
+        details[open] p {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
+
+
+    <details>
+        <summary>Haz clic para ver más</summary>
+        <p>Esta etiqueta es útil para mejorar la organización de la información en una página web, permitiendo a los usuarios acceder a detalles adicionales solo cuando lo necesiten.</p>
+    </details>
        
-   <!-- agregar un detail que se muestre con una animacion  -->
+    
         
 </body>
 </html>
