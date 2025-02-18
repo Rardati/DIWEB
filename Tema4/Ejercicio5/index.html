@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .boton {
+            /* Tamaño cuadrado */
+            width: 120px;
+            height: 120px;
+
+            /* Bordes redondeados pero no circulares */
+            border-radius: 15px;
+
+            /* Color verde */
+            background-color: #4CAF50;
+
+            /* Sombras para dar profundidad */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 6px 20px rgba(0, 0, 0, 0.19);
+
+            /* Estilos del texto */
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            line-height: 120px;
+
+            /* Elimina el borde por defecto */
+            border: none;
+
+            /* Transición suave en hover */
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto hover */
+        .boton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2),
+                0 12px 30px rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="boton">Si</button>
+    <button class="boton">No</button>
+</body>
+
+</html>
