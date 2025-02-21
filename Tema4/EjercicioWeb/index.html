@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio user Agent</title>
+    <style>
+        /* Estilos comunes */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Si el navegador es Chrome */
+        .chrome body {
+            background-color: rgb(16, 16, 165);
+        }
+
+        /* Si el navegador es Firefox */
+        .firefox body {
+            background-color: rgb(250, 92, 19);
+        }
+
+        /* Si el navegador es Safari */
+        .safari body {
+            background-color: rgb(230, 68, 68);
+        }
+
+        /* Si el navegador es Edge */
+        .edg body {
+            background-color: rgb(184, 67, 184);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicio con userAgent</h1>
+    <p>Este fondo debería cambiar de color dependiendo del navegador.</p>
+
+    <script>
+        window.onload = function() {
+            const userAgent = navigator.userAgent;
+
+            // Detectar el navegador y añadir la clase adecuada
+            if (userAgent.includes("Edg")) { // Detecta Edge primero
+                document.body.background-color.add("edg");
+            } else if (userAgent.includes("Chrome")) {
+                document.body.background-color.add("chrome");
+            } else if (userAgent.includes("Firefox")) {
+                document.body.background-color.add("firefox");
+            } else if (userAgent.includes("Safari")) { // Safari es el último, ya que Chrome también incluye "Safari"
+                document.body.background-color.add("safari");
+            }
+        };
+    </script>
+</body>
+
+</html>
