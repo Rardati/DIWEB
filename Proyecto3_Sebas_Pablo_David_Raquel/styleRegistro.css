@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -36,11 +46,11 @@ header .logo:hover img {
     margin-top: 10%;
    
     width: 70%;
-    border-radius: 0.5rem; /* Menos redondeado */
+    border-radius: 0.5rem; 
 }
 
 .contact-form .form-control {
-    border-radius: 0.5rem; /* Menos redondeado */
+    border-radius: 0.5rem; 
 }
 
 .contact-image {
@@ -71,7 +81,7 @@ header .logo:hover img {
 .btnContact {
     width: 50%;
     border: none;
-    border-radius: 0.5rem; /* Menos redondeado */
+    border-radius: 0.5rem; 
     padding: 1.5%;
     background: #0062cc;
     font-weight: 600;
@@ -81,7 +91,7 @@ header .logo:hover img {
 
 .btnContactSubmit {
     width: 50%;
-    border-radius: 0.5rem; /* Menos redondeado */
+    border-radius: 1px;
     padding: 1.5%;
     color: #fff;
     background-color: #0062cc;
@@ -103,3 +113,4 @@ footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
