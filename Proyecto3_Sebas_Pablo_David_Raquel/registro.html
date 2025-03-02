@@ -9,7 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styleRegistro.css">  
-
 </head>
 
 <body>
@@ -19,7 +18,6 @@
                 <img src="images/v1_6372.png" id="img" />
             </a>
         </div>
-        <!-- Interruptor de modo oscuro -->
         <div class="dark-mode-switch">
             <input type="checkbox" id="dark-mode-toggle">
             <label for="dark-mode-toggle"></label>
@@ -27,7 +25,7 @@
     </header>
 
     <div class="container contact-form">
-        <form id="contactForm" method="post" class="bg-light p-5 rounded">
+        <form id="contactForm" method="post" class="p-5 rounded">
             <h3 class="text-center mb-4">Regístrate</h3>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -35,34 +33,28 @@
                     <input type="text" name="name" id="name" class="form-control" placeholder="Tu nombre" required />
 
                     <label for="email">Email *</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="email@ejemplo.com"
-                        required />
+                    <input type="email" name="email" id="email" class="form-control" placeholder="email@ejemplo.com" required />
 
                     <label for="phone">Teléfono *</label>
-                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Nº de telefono "
-                        required />
+                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Nº de telefono " required />
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="message">Mensaje (Opcional)</label>
-                    <textarea name="message" id="message" class="form-control" placeholder="Escribe tu mensaje aquí..."
-                        style="height: 150px;"></textarea>
+                    <textarea name="message" id="message" class="form-control" placeholder="Escribe tu mensaje aquí..." style="height: 150px;"></textarea>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <input type="submit" name="btnSubmit" class="btn btn-primary btn-block" value="Registrarse" />
-
                     <input type="button" name="btnBack" class="btn btn-success btn-block" value="Volver" />
                 </div>
             </div>
         </form>
     </div>
 
-
     <footer class="text-center mt-4">
-        <p>&copy; 2024 Your website. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
-                Service</a></p>
+        <p>&copy; 2024 Your website. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 
     <script>
@@ -79,22 +71,8 @@
         });
 
         const darkModeToggle = document.getElementById('dark-mode-toggle');
-        let darkModeStylesheet;
-
         darkModeToggle.addEventListener('click', () => {
-            if (!darkModeStylesheet) {
-                // Cargar stylesDark.css si aún no está cargado
-                darkModeStylesheet = document.createElement('link');
-                darkModeStylesheet.rel = 'stylesheet';
-                darkModeStylesheet.href = 'css/styles-index-darkmode.css';
-                document.head.appendChild(darkModeStylesheet);
-                darkModeToggle.textContent = 'Modo claro'; // Cambiar texto del botón
-            } else {
-                // Si ya está cargado, remover el modo oscuro
-                document.head.removeChild(darkModeStylesheet);
-                darkModeStylesheet = null;
-                darkModeToggle.textContent = 'Modo oscuro'; // Cambiar texto del botón
-            }
+            document.body.classList.toggle('dark-mode');
         });
     </script>
 </body>
