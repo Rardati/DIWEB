@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
     <style>
-        details {
-            overflow: hidden;
-            transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
-            max-height: 50px;
-            opacity: 1;
+        
+        details p {
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
-        details[open] {
-            max-height: 200px;
+        details[open] p {
             opacity: 1;
+            transform: translateY(0);
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -23,8 +29,6 @@
         <summary>Haz clic para ver más</summary>
         <p>Esta etiqueta es útil para mejorar la organización de la información en una página web, permitiendo a los usuarios acceder a detalles adicionales solo cuando lo necesiten.</p>
     </details>
-       
-    
-        
+
 </body>
 </html>
