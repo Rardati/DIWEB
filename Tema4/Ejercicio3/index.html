@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        details {
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+            max-height: 50px;
+            opacity: 1;
         }
-        details p {
-            opacity: 0;
-            transition: opacity 3s ease-in-out;
-        }
-        details[open] p {
+
+        details[open] {
+            max-height: 200px;
             opacity: 1;
         }
     </style>
 </head>
 <body>
-
 
     <details>
         <summary>Haz clic para ver más</summary>
