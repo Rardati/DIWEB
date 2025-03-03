@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio user Agent</title>
+    <title>Ejercicio User Agent</title>
     <style>
         /* Estilos comunes */
         body {
@@ -14,22 +14,22 @@
         }
 
         /* Si el navegador es Chrome */
-        .chrome body {
+        .chrome {
             background-color: rgb(16, 16, 165);
         }
 
         /* Si el navegador es Firefox */
-        .firefox body {
+        .firefox {
             background-color: rgb(250, 92, 19);
         }
 
         /* Si el navegador es Safari */
-        .safari body {
+        .safari {
             background-color: rgb(230, 68, 68);
         }
 
         /* Si el navegador es Edge */
-        .edg body {
+        .edg {
             background-color: rgb(184, 67, 184);
         }
     </style>
@@ -41,17 +41,17 @@
 
     <script>
         window.onload = function() {
-            const userAgent = navigator.userAgent;
+            const userAgent = navigator.userAgent.toLowerCase();
+            const htmlElement = document.documentElement; // Se usa <html> en lugar de <body>
 
-            // Detectar el navegador y añadir la clase adecuada
-            if (userAgent.includes("Edg")) { // Detecta Edge primero
-                document.body.background-color.add("edg");
-            } else if (userAgent.includes("Chrome")) {
-                document.body.background-color.add("chrome");
-            } else if (userAgent.includes("Firefox")) {
-                document.body.background-color.add("firefox");
-            } else if (userAgent.includes("Safari")) { // Safari es el último, ya que Chrome también incluye "Safari"
-                document.body.background-color.add("safari");
+            if (userAgent.includes("edg")) { // Edge
+                htmlElement.classList.add("edg");
+            } else if (userAgent.includes("safari") && !userAgent.includes("chrome")) { // Safari
+                htmlElement.classList.add("safari");
+            } else if (userAgent.includes("chrome")) { // Chrome
+                htmlElement.classList.add("chrome");
+            } else if (userAgent.includes("firefox")) { // Firefox
+                htmlElement.classList.add("firefox");
             }
         };
     </script>
